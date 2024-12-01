@@ -1,0 +1,44 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#646cff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#747bff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#headerGradient)" />
+  <g transform="translate(400,200)">
+    <text 
+      x="0" 
+      y="0" 
+      font-family="Arial, sans-serif" 
+      font-size="48" 
+      font-weight="bold" 
+      fill="white" 
+      text-anchor="middle"
+    >
+      Testing & QA Challenges
+    </text>
+    <text 
+      x="0" 
+      y="50" 
+      font-family="Arial, sans-serif" 
+      font-size="24" 
+      fill="rgba(255,255,255,0.9)" 
+      text-anchor="middle"
+    >
+      Real-world testing challenges and solutions
+    </text>
+  </g>
+  <path 
+    d="M50,350 Q400,250 750,350" 
+    stroke="rgba(255,255,255,0.2)" 
+    stroke-width="4" 
+    fill="none"
+  />
+  <path 
+    d="M50,370 Q400,270 750,370" 
+    stroke="rgba(255,255,255,0.1)" 
+    stroke-width="4" 
+    fill="none"
+  />
+</svg>

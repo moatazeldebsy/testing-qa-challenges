@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Main Circle -->
+  <circle cx="100" cy="100" r="90" fill="#646cff" opacity="0.1"/>
+  <circle cx="100" cy="100" r="70" fill="#646cff" opacity="0.2"/>
+  
+  <!-- Testing Symbol -->
+  <g transform="translate(50, 50)">
+    <path d="M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z" 
+          fill="#646cff" 
+          stroke="#535bf2" 
+          stroke-width="2"/>
+    <path d="M50 20 L80 35 L80 65 L50 80 L20 65 L20 35 Z" 
+          fill="#747bff" 
+          stroke="#535bf2" 
+          stroke-width="2"/>
+    <!-- Checkmark -->
+    <path d="M40 50 L45 60 L65 35" 
+          fill="none" 
+          stroke="white" 
+          stroke-width="4" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+  </g>
+</svg>

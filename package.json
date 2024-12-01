@@ -1,0 +1,29 @@
+{
+  "name": "testing-qa-challenges",
+  "version": "1.0.0",
+  "description": "Comprehensive Testing & QA Challenges Documentation",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "deploy": "npm run docs:build"
+  },
+  "dependencies": {
+    "vue": "^3.4.21",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "vitepress": "^1.0.0-rc.45",
+    "mermaid": "^10.9.0",
+    "markdown-it": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1"
+  }
+}

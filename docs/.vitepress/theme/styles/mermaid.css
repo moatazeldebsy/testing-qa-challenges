@@ -1,0 +1,17 @@
+/* Mermaid diagram styles */
+.mermaid {
+  background: var(--vp-c-bg-soft);
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Dark mode adjustments */
+.dark .mermaid {
+  filter: invert(0.9) hue-rotate(180deg);
+}

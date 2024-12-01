@@ -1,0 +1,30 @@
+/* Challenge Components */
+.challenge-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: var(--vp-c-bg-soft);
+}
+
+.difficulty-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+/* Difficulty Colors */
+.bg-green-100 { background-color: rgba(74, 222, 128, 0.1); }
+.bg-blue-100 { background-color: rgba(96, 165, 250, 0.1); }
+.bg-yellow-100 { background-color: rgba(250, 204, 21, 0.1); }
+.bg-orange-100 { background-color: rgba(251, 146, 60, 0.1); }
+.bg-red-100 { background-color: rgba(248, 113, 113, 0.1); }
+
+.text-green-800 { color: rgb(22, 101, 52); }
+.text-blue-800 { color: rgb(30, 64, 175); }
+.text-yellow-800 { color: rgb(133, 77, 14); }
+.text-orange-800 { color: rgb(154, 52, 18); }
+.text-red-800 { color: rgb(153, 27, 27); }
