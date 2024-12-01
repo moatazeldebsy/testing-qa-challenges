@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'Testing & QA Challenges',
   description: 'Comprehensive guide to enterprise software testing challenges',
   base: '/testing-qa-challenges/',
-  outDir: 'docs/.vitepress/dist',
+  outDir: '.vitepress/dist',
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#646cff' }]
@@ -14,24 +14,6 @@ export default defineConfig({
       light: 'github-light',
       dark: 'github-dark'
     },
-  },
-  build: {
-    chunkSizeWarningLimit: 1000,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'vue-vendor': ['vue'],
-          'vitepress-vendor': ['vitepress'],
-          'mermaid-vendor': ['mermaid'],
-          'fontawesome-vendor': [
-            '@fortawesome/fontawesome-svg-core',
-            '@fortawesome/free-brands-svg-icons',
-            '@fortawesome/free-solid-svg-icons',
-            '@fortawesome/vue-fontawesome'
-          ]
-        }
-      }
-    }
   },
   themeConfig: {
     logo: '/logo.svg',
