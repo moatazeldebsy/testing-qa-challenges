@@ -15,6 +15,24 @@ export default defineConfig({
       dark: 'github-dark'
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vue-vendor': ['vue'],
+          'vitepress-vendor': ['vitepress'],
+          'mermaid-vendor': ['mermaid'],
+          'fontawesome-vendor': [
+            '@fortawesome/fontawesome-svg-core',
+            '@fortawesome/free-brands-svg-icons',
+            '@fortawesome/free-solid-svg-icons',
+            '@fortawesome/vue-fontawesome'
+          ]
+        }
+      }
+    }
+  },
   themeConfig: {
     logo: '/logo.svg',
     nav: [

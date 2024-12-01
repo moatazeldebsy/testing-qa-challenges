@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import './styles/custom.css'
-import { h, onMounted, watch, nextTick } from 'vue'
+import './styles/mermaid.css'
+import { h, onMounted, watch } from 'vue'
 import { useRoute } from 'vitepress'
 import { initMermaid, renderMermaidDiagrams } from './utils/mermaid'
 import { registerComponents } from './utils/components'
@@ -14,33 +15,42 @@ export default {
     const route = useRoute()
 
     onMounted(() => {
-      initMermaid()
-      renderMermaidDiagrams()
+      if (typeof window !== 'undefined') {
+        initMermaid()
+        renderMermaidDiagrams()
+      }
     })
 
     watch(
       () => route.path,
       async () => {
-        await nextTick()
-        renderMermaidDiagrams()
+        if (typeof window !== 'undefined') {
+          await Promise.resolve()
+          renderMermaidDiagrams()
+        }
       }
     )
 
-    // Handle dark/light mode changes
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
-        if (mutation.target.classList.contains('dark')) {
-          initMermaid()
-          renderMermaidDiagrams()
-        }
+    if (typeof window !== 'undefined') {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.target instanceof HTMLElement && 
+              mutation.type === 'attributes' && 
+              mutation.attributeName === 'class') {
+            initMermaid()
+            renderMermaidDiagrams()
+          }
+        })
       })
-    })
 
-    onMounted(() => {
-      const html = document.querySelector('html')
-      if (html) {
-        observer.observe(html, { attributes: true, attributeFilter: ['class'] })
-      }
-    })
+      onMounted(() => {
+        const html = document.querySelector('html')
+        if (html) {
+          observer.observe(html, { attributes: true, attributeFilter: ['class'] })
+        }
+
+        return () => observer.disconnect()
+      })
+    }
   }
 }
