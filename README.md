@@ -10,16 +10,6 @@ A comprehensive guide to enterprise software testing challenges and solutions.
 - Interactive learning materials
 - Community-driven knowledge base
 
-## 📚 Documentation Structure
-
-```
-docs/
-├── challenges/        # Testing challenges by category
-├── career-paths/      # Career development guides
-├── resources/         # Tools and learning materials
-└── public/           # Static assets
-```
-
 ## 🛠️ Tech Stack
 
 - VitePress for static site generation
@@ -43,7 +33,6 @@ docs/
 The documentation is automatically deployed to GitHub Pages when changes are pushed to the main branch. The deployment process is handled by GitHub Actions.
 
 To deploy manually:
-
 1. Push your changes to the main branch
 2. GitHub Actions will automatically build and deploy the site
 3. Visit the deployed site at: https://moatazeldebsy.github.io/testing-qa-challenges/
