@@ -10,14 +10,6 @@ A comprehensive guide to enterprise software testing challenges and solutions.
 - Interactive learning materials
 - Community-driven knowledge base
 
-## 🛠️ Tech Stack
-
-- VitePress for static site generation
-- Vue.js for interactive components
-- Mermaid.js for diagrams
-- Markdown for content
-- GitHub Pages for hosting
-
 ## 🧞 Commands
 
 | Command           | Action                                       |
